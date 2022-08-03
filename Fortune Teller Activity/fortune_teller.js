@@ -12,15 +12,16 @@ var fortune = 8
 // YOUR CODE GOES HERE
 function fortuneTeller(fortune){
 
- if(fortune <= 3|| fortune > 0 ){
-    return("low fortune")
+ if(fortune <= 3 && fortune > 0 ){
+    console.log("low fortune")
  }
- if(fortune <= 7 || fortune > 3){
-    return("average fortune")
+ if(fortune <= 7 && fortune > 3){
+    console.log("average fortune")
  }
- if(fortune > 7 || fortune <= 10 ){
+ if(fortune > 7 && fortune <= 10 ){
     console.log("good fortune")
- }
+ }else
+ {console.log("fortune out of range")}
 };
 
- console.log(fortuneTeller);
+ fortuneTeller(fortune);
